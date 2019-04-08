@@ -18,11 +18,17 @@ In this project, We do the Exploratory Data Analysis first, to investigate the r
 
 
 We use heatmap to show the correlations among the variables.
+![Correlation_Heatmap](https://user-images.githubusercontent.com/48134752/55744194-fb829280-5a51-11e9-89cd-5a4201bfc32c.PNG)
 
 
+We see that GRE score, CGPA and TOEFL score are highly correlated with the Chance of Admit. CGPA is having the highest correlation to it.
 
-The categorical feature 'Research' at first seems to be unimportant since it has the lowest correlation with the target variable. But upon diving further deep into it, we compare the number of candidates who do and do not have Research on their profile, we get to know that it is an important factor.
+The Research has the least correlation with the chance of admit. We can take a closer look on this in another way, since it is the only categorical variable.
+
+The categorical feature 'Research' at first seems to be unimportant since it has the lowest correlation with the target variable. But upon diving further deep into it, we compare the number of candidates who do and do not have Research on their profile, we get to know that it is indeed an important factor.
 ![Research_Relation](https://user-images.githubusercontent.com/48134752/55743011-e0faea00-5a4e-11e9-98a9-a158775e7964.PNG)
+
+The above plots show the effect of having done Research by candidates on the potential chance of getting admit. Those having Research have higher chance of getting admit than those not having Research. The points between CGPA from 8.5 to 10.0 clearly tells us that with research, more number of candidates have higher chance of admit(>0.7) and less number of students have higher chance of admit without having done research.
 
 The dataset is then split into train and test sets, and is scaled to the same level, so that the results won't be biased towards some particular features.
 
@@ -42,7 +48,7 @@ For trying the classification models, we need to convert the Target Variable to 
 
 We then apply the classifiers Logistic Regression, Support Vector classifier, Naive Bayes, Decision Tree and Random Forest Classifiers and K Nearest Neighbours. We use f1 score to measure the accuracy of the classification models predictions.
 
-## Comparing all the estimators performance:
+## Comparing all the estimators' performance:
 
 Finally, we visualize the comparison of all the Regression models' scores in one plot and all the classification models' scores in another plot.
 ![Performance_Comparison](https://user-images.githubusercontent.com/48134752/55743889-1accf000-5a51-11e9-9606-02b6427190f4.PNG)
