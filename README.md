@@ -20,6 +20,7 @@ The categorical feature 'Research' at first seems to be unimportant since it has
 The dataset is then split into train and test sets, and is scaled to the same level, so that the results won't be biased towards some particular features.
 
 ## Regression models: Visualizing the behaviour and fit the models
+
 We then apply various regression algorithms to the training set. First we are plotting the Learning curves of Random Forest, Linear and Support Vector regressors, to visualize the training behaviour of the models.
 
 ![Learning_Curves_Regr](https://user-images.githubusercontent.com/48134752/55743461-fde3ed00-5a4f-11e9-807e-c8c04ab146ec.PNG)
@@ -29,9 +30,20 @@ From above plots, we decide to use Linear Regression first. Since Random Forest 
 We then move on to apply Linear Regressor by finding the best parameters using Grid Search. Same is followed for Decision trees, Support Vector and Random Forest regressors. We use r2 score to measure the accuracy of the Regression Models predictions.
 
 ## Classification models: fit the models with best parameters and get the best accuracy
+
 For trying the classification models, we need to convert the Target Variable to categorical type from continuous type. So we decided that if the Chance of Admit is greater than 80% (0.80), we'll convert it to 1 and if it's less than 80%, we convert it ot 0.
 We then apply the classifiers Logistic Regression, Support Vector classifier, Naive Bayes, Decision Tree and Random Forest Classifiers and K Nearest Neighbours. We use f1 score to measure the accuracy of the classification models predictions.
 
 ## Comparing all the estimators performance:
-Finally, we visualize the comparison of all the Regression models' scores in one plot and all the classification models' scores in another plot.
 
+Finally, we visualize the comparison of all the Regression models' scores in one plot and all the classification models' scores in another plot.
+![Performance_Comparison](https://user-images.githubusercontent.com/48134752/55743889-1accf000-5a51-11e9-9606-02b6427190f4.PNG)
+
+
+The graph of regressors shows that the Random forest and Linear regressors perform comparably well than others.
+For classifiers, the graph shows that the Logistic Regressor and Support Vector Classifier worked well.
+
+
+## Conclusion:
+
+Getting into the desired university for Post Graduate programs is a 'dream come true' for almost all the aspirants. This model can be a potential saviour for a huge number of aspirants, which will enable them to spend less money on the applications, as they will be able to apply only to the appropriate universities according to their credentials, because the application forms of the universities often cost a significant amount for a grad student.
