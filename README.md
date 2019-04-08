@@ -13,9 +13,15 @@ The parameters included are:
 
 ## Exploratory Data Analysis:
 
-In this project, We do the Exploratory Data Analysis first, to investigate the relations among all the features.
-The categorical feature 'Research' at first seems to be unimportant since it has the lowest correlation with the target variable. But upon diving further deep into it, wecompare the number of candidates who do and do not have Research on their profile, we get to know that it is an important factor.
+In this project, We do the Exploratory Data Analysis first, to investigate the relations among all the features. We visualize the relation between each feature and the target variable using seaborn regplot() method. We use heatmap to show the correlations among the variables.
+The categorical feature 'Research' at first seems to be unimportant since it has the lowest correlation with the target variable. But upon diving further deep into it, we compare the number of candidates who do and do not have Research on their profile, we get to know that it is an important factor.
+![Research_Relation](https://user-images.githubusercontent.com/48134752/55743011-e0faea00-5a4e-11e9-98a9-a158775e7964.PNG)
 
-    The dataset is then split into train and test sets, and is scaled to the same level, so that the results won't be biased towards some particular features.
+The dataset is then split into train and test sets, and is scaled to the same level, so that the results won't be biased towards some particular features.
 
+## Regression models
+We then apply various regression algorithms to the training set. First we are plotting the Learning curves of Random Forest, Linear and Support Vector regressors, to visualize the training behaviour of the models.
+
+
+    
 
