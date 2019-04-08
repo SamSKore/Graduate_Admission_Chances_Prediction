@@ -51,6 +51,7 @@ We then apply the classifiers Logistic Regression, Support Vector classifier, Na
 ## Comparing all the estimators' performance:
 
 Finally, we visualize the comparison of all the Regression models' scores in one plot and all the classification models' scores in another plot.
+
 ![Performance_Comparison](https://user-images.githubusercontent.com/48134752/55743889-1accf000-5a51-11e9-9606-02b6427190f4.PNG)
 
 
