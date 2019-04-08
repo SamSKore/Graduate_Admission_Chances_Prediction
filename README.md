@@ -1,2 +1,13 @@
 # Graduate_Admission_Chances_Prediction
-This project contains a python code for Machine Learning model which predicts the Chance of Admit for Graduates for higher education into American Universities, a dataset which has a record of such cases from the past, and screenshots(images) for visualization purpose.
+This Project is about building the predictive model for predicting the Chances of Graduate Admissions in the American Universities. The dataset contains several parameters which are considered important during the application for Masters Programs. This dataset is taken from kaggle datasets which can be found here.
+The parameters included are:
+
+    GRE Scores ( out of 340 )
+    TOEFL Scores ( out of 120 )
+    University Rating ( out of 5 )
+    Statement of Purpose and Letter of Recommendation Strength ( out of 5 )
+    Undergraduate GPA ( out of 10 )
+    Research Experience ( either 0 or 1 )
+    Chance of Admit ( ranging from 0 to 1 )
+
+
