@@ -13,7 +13,10 @@ The parameters included are:
 
 ## Exploratory Data Analysis:
 
-In this project, We do the Exploratory Data Analysis first, to investigate the relations among all the features. We visualize the relation between each feature and the target variable using seaborn regplot() method. We use heatmap to show the correlations among the variables.
+In this project, We do the Exploratory Data Analysis first, to investigate the relations among all the features. We visualize the relation between each feature and the target variable using seaborn regplot() method.
+
+
+We use heatmap to show the correlations among the variables.
 The categorical feature 'Research' at first seems to be unimportant since it has the lowest correlation with the target variable. But upon diving further deep into it, we compare the number of candidates who do and do not have Research on their profile, we get to know that it is an important factor.
 ![Research_Relation](https://user-images.githubusercontent.com/48134752/55743011-e0faea00-5a4e-11e9-98a9-a158775e7964.PNG)
 
@@ -32,6 +35,7 @@ We then move on to apply Linear Regressor by finding the best parameters using G
 ## Classification models: fit the models with best parameters and get the best accuracy
 
 For trying the classification models, we need to convert the Target Variable to categorical type from continuous type. So we decided that if the Chance of Admit is greater than 80% (0.80), we'll convert it to 1 and if it's less than 80%, we convert it ot 0.
+
 We then apply the classifiers Logistic Regression, Support Vector classifier, Naive Bayes, Decision Tree and Random Forest Classifiers and K Nearest Neighbours. We use f1 score to measure the accuracy of the classification models predictions.
 
 ## Comparing all the estimators performance:
